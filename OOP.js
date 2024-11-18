@@ -115,13 +115,23 @@ class Vehicule{
   karhba.vehiculeSound()
   kamyoun.vehiculeSound()
   
+
 //   Protoype  
 
+class Person{
+  name
+  age
 
+  constructor(name,age){
+    this.name = name
+    this.age = age
+  }
+}
 
-  
-  
-  
-  
-  
-  
+Person.prototype.Saluer = function(){
+  console.log(`Hello my name is ${this.name} and i am ${this.age}`)
+}
+
+var user = new Person('Rahme',22)
+
+user.Saluer()
